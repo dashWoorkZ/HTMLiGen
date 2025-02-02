@@ -1,0 +1,450 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding-inline: 0;
+    padding-block: 0;
+    box-sizing: border-box;
+}
+imgs {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+html,
+body {
+    width: 100svw;
+    min-height: 100svh
+    }
+    
+body {
+    font-size: clamp(1.2rem, 1.1ch, 1.5rem);
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#HTMLiGenMain {
+    container-type: inline-size;
+    container-name: htmlIgen;
+    display: inline flex;;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 100%;
+    min-width: 25rem;
+    min-height: 100svh;
+    padding-block-end: 4rem;
+}
+
+#htmlIGen {
+    min-height: inherit;
+    display: inline flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1.5rem;
+    background-color: #CEF8FC;
+    flex: 1;
+    flex-basis: 80rem;
+    flex-direction: column;
+    max-width: calc(80% - 3rem);
+    padding-block-start: 1rem;
+    padding-block-end: 2rem;
+    border-radius: 1rem;
+    outline: 0.15rem ridge purple;
+    outline-offset: 0.3rem;
+    box-shadow: 0 0 0.7rem rgb(8, 57, 190),  0 0 0.7rem rgb(7, 241, 230);
+    position: relative;
+    min-width: 25rem;
+    margin-inline: auto;
+    scale: 0.8;
+   
+}
+#htmlIGen #msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#htmlIGen #msg p {
+    border: 0.5rem dashed red;
+    background-color: #FBC6C3;
+    color: #F1281B;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #60110C;
+}
+ #htmlIGen #iGenRangeInput {
+    max-width: 100%; 
+    display: inline flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    filter: drop-shadow(0.06275rem 0.106275rem 0.206275rem #2BBEE0);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+#iGenRangeInput .intro,
+#IGenRangeInput .iconGen {
+    display: inline flex;
+    justify-content: center;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#iGenRangeInput .intro {
+    width: 95svw;
+    align-items: baseline;
+    gap: 0.5rem;
+    border: 0.2rem inset rebeccapurple;
+    outline: 0.2rem ridge gold;
+    outline-offset: 0.1rem;
+    border-radius: 1rem;
+}
+
+#IGenRangeInput .iconGen {
+    align-items: center;
+    max-width: 100%;
+} 
+#iGenRangeInput .intro h1 {
+    text-align: center;
+    color: blue;
+    text-shadow: 0.06275rem 0.06275rem
+    0.06275rem gold;
+    width: 100%;
+}   
+
+#iGenRangeInput .intro p {
+    text-align: center;
+    color: blue;
+    text-shadow: 0.06275rem 0.06275rem
+    0.06275rem gold;
+    width: 100%;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.2rem, 1.1ch, 1.5rem);
+    flex: 1;
+}     
+
+.iconGen form {
+    display: inline grid;
+    grid-template-columns: minmax(auto-fit, repeat(2,1fr));
+    grid-template-areas:
+    '. inputs .'
+    '. ranges .'
+    '. btns .';
+    place-content: center;
+    gap: 1.5rem;
+    max-width: 80rem;
+    min-width: 25rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+
+.iconGen form > * {
+    flex: 1;
+}
+
+form .range__groups {
+    width:inherit;
+    word-break: normal;
+    grid-area: ranges;
+    display: grid;
+    justify-content: center;
+    padding-inline-start: 4rem;
+}
+
+.range__groups h1 {
+    color: blue;
+    text-shadow: 0 0.02rem 0.02rem rgb(106, 10, 170);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(2rem, 1.8ch, 2.5rem);
+}
+.html__igen__ranges {
+    display: inline flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 89%;
+    padding-block: 0.5rem;
+    text-align: justify;
+    margin-inline: auto;
+    width: contain;
+}
+
+.html__igen__ranges strong {
+    color: rgb(162, 0, 255);
+    text-shadow: 0 0.02rem 0.02rem rgb(21, 10, 170);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1rem, 1.1ch, 1.5rem);
+}
+
+.igen__range .ranges {
+    color: rgb(2, 20, 39);
+    text-shadow: 0 0.02rem 0.02rem rgb(12, 181, 233);
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    font-size: clamp(1rem, 1.1ch, 1.5rem);
+}
+
+.igen__range .seperator {
+    color: gold;
+    text-shadow: 0 0.02rem 0.02rem dodgerblue;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.2rem, 1.3ch, 1.5rem);
+}
+
+form #btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 0.5rem;
+    border: 0.2rem groove gold;
+    outline: 0.2rem ridge blue;
+    outline-offset: 0.1rem;
+    grid-area: btns;
+    border-radius: 0.5rem;
+    width: 30%;
+    margin-inline: auto;
+}
+
+form #iconGenInputs {
+    display: inline grid;
+    grid-template-columns: minmax(auto-fit, 1fr);
+    grid-template-areas:
+    '. start .'
+    '. end .';
+    place-content: center;
+    gap: 2rem;
+    width: 80rem;
+    grid-area: inputs;
+}
+
+#iconGenInputs #form__group {
+    flex: 1;
+    flex-basis: 35rem;
+    display: inline flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    width: 60rem;
+}
+
+[aria-role="start"] {
+    grid-area: start;
+}
+
+[aria-role="end"] {
+    grid-area: end;
+}
+
+#iconGenInputs #form__group input {
+    gap: 1rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.5rem;
+    border: 0.1rem solid rebeccapurple;
+
+}
+
+input[placeholder] {
+    color: rgb(6, 46, 179);
+    text-shadow: 0.01275rem 0.02275rem 0.03275rem rgb(6, 238, 122);
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.5rem, 1.3ch, 2rem);
+}
+
+#iconGenInputs #form__group label {
+    gap: 1rem;
+    color: blue;
+    text-shadow: 0.01275rem 0.02275rem 0.03275rem rgb(3, 17, 61);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.1rem, 1.2ch, 1.5rem);
+}
+
+#reset,
+#getIcon {
+    display: inline flex;
+    width: 8.5rem;
+    height: 2.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding-inline-end: 0.5rem;
+    color: blue;
+    text-shadow: 0.06275rem 0.06275rem 0.06275rem rgb(10, 125, 170);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(0.8rem, 1.2ch, 1.2rem);
+    cursor: pointer;
+    position: relative;
+    border: 0.1rem inset blue;
+    border-radius: 0.5rem;
+    rotate: 0;     
+
+    & span {
+        width:2.5rem;
+        height: 2.5rem;
+        border-radius: 100;
+    }
+
+    &:hover {
+        border: 0.2rem inset green;
+        background-color: #10B9EB;
+    }
+}
+
+.btnIco img {
+    scale: 0.6;
+    position: absolute;
+    left: 0;
+    bottom: 0.25rem;
+    position: relative;
+}
+
+#reset:hover::after,
+#getIcon:hover::after {
+    content: "Courtesy of PngTree";
+    position: absolute;
+    top: 3.3rem;
+    Left: 1rem;  
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: clamp(0.5rem, 0.75ch, 1rem);
+}
+
+#rest:hover::after,
+#getIcon:hover::after {
+    color: green;
+    text-shadow: 0.06275rem 0.06275rem 0.06275rem orange;
+    Left: 1rem;
+}
+
+#icons {
+    display: inline flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+#icons > div {
+    display: flex;
+    border: 0.2rem solid blue;
+    outline: 0.2rem ridge purple;
+    outline-offset: 0.1rem;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    width: min(5rem, 11rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icons  > div .uni {
+    color: blue;
+    text-shadow: 0 0.1rem 0.1rem gold;
+    font-weight: 700;
+    font-size: clamp(0.8rem, 1ch, 4rem);
+}
+
+#cons > div .icon {
+    display: inline;
+    color: gold;
+    text-shadow: 0 0.1rem 0.2rem purple;
+    font-weight: 700;
+    font-size: clamp(2rem, 3ch, 4rem);           
+}
+
+footer {
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    gap: 1rem;
+    margin-inline: auto;
+    padding-block: 1rem;
+    border: 0.1rem inset rebeccapurple;
+    outline: 0.1rem ridge gold;
+    outline-offset: 0.1rem;
+    border-radius: 1rem;
+    min-width: 25rem;
+
+    & p {
+        width: 100%;
+        display: inline flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    & p .topText {
+        font-size: clamp(1rem, 1ch, 1.5rem);
+        color: rgb(14, 184, 236);
+        text-shadow: 0 0.1rem 0.2rem purple;
+        letter-spacing: 0.1rem;
+        font-weight: 800;
+        line-height: 1.5;
+        align-items: center;
+    }
+
+    .copy {
+        font-size: clamp(0.5rem, 0.8ch, 1rem);
+        color: rgb(14, 184, 236);
+        text-shadow: 0 0.0125rem 0.1rem purple;
+        letter-spacing: 0.1rem;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+
+    & p a {
+        position: relative;
+        z-index: 1;
+        border: 0.2rem solid blue;
+        outline: 0.2rem ridge purple;
+        outline-offset: 0.1rem;
+        border-radius: 100%;
+        background-color:#136179;
+        cursor: pointer;
+    }
+
+    & p a #topper {
+        display: inline flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(15, 128, 194);
+        text-shadow: 0 0.1rem 0.2rem purple;
+        font-weight: 700;
+        font-size: clamp(2rem, 2ch, 2.5rem);
+        border-radius: 100%;
+        position: sticky;
+        left: 50%;
+        bottom: 45%;
+        translate: -50%, -45%;
+        width: 5rem;
+        height: 5rem;
+        z-index: 3;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+#dssLogo {
+    position: absolute;
+    inset: 0;
+    width: 5rem;
+    height: 5rem;
+    z-index: 2;
+    opacity: 0.8;
+}

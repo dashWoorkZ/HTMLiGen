@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+    I started to make this program after watching Adam Koury's "Flat Icons HTML Code Symbols Discovery JAvascript"
+    you can watch it here: https://www.youtube.com/watch?v=5G-XFiAHtpU, not sure he is still making videos, this one
+    is 8 years old, so i want to thank Adam Koury for the inspiration to write this.
+    
+    I will be considering this program a work in progress, i have lots of ideas for it, just not sure i have the time
+    to implement them all, enjoy this program and do with it as you will, spread the good news, take care and God Bless.
+    Lord: Dash: LA Londe.
+    dashWoorkZ Sovereign Society
+    Managing Director
+    dash@dashwoorkz.ca
+    
+    
+    MIT License
+
+Copyright © 2025 dashWoorkZ Sovereign Society
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/htmlIGen.js" defer></script>
+    <title>HTML iGen</title>
+</head>
+<body>
+    <div id="htmliGenMain">
+    <div id="htmlIGen" class="top">
+                         
+        <section id="iGenRangeInput">
+            <div class="intro">
+                <h1>HTML-iGen<span> &#9086;</span></h1>
+                <p>
+                        Enter a range of numbers to create HTML Icons.
+                </p>
+                <div id="msg"></div> 
+            </div>
+            <div class="iconGen">
+                <form action="HTML-iGen.html">
+                    <div id="iconGenInputs">
+                        <div id="form__group" aria-role="start">
+                            <label for="start">Starting Number</label>
+                            <input type="number" name="start" id="start" placeholder="33" />
+                        </div>
+                        <div id="form__group" aria-role="end">
+                            <label for="end">End Number</label>
+                            <input type="number" name="end" id="end" placeholder="200" />
+                        </div>
+                    </div>
+                    <div class="range__groups">
+                        <h1>
+                                Icon Group Ranges:
+                        </h1>
+                        <div class="html__igen__ranges">
+                            <span class="igen__range"><strong>Special Characters:</strong> 33 - 35, 37 - 47, 58 - 64, 91 - 96, 123 - 126,166</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Base Numbers: </strong> 48 - 57</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Alphabet (Caps): </strong>65 - 90;</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Alphabet (small): </strong>97 - 122</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Authority: </strong>165, 169, 174</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>currency: </strong>36, 128, 131, 163, 165</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Math Fractions: </strong>188 - 190, 8528 - 8542</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Plus/Minus: </strong>177</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Symbols: </strong>1757, 1758, 1161, 1769, 3553, 5872, 6678, 8277, 8853 - 8865, 8986, 8987, 9200 - 9203</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>More Symbols: </strong>, 9728 - 9734, 9745 - 9760, 9762 - 9794 9800 - 9855, 9862 - 9925, 9928, 9934, 9935</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>And More Symbols: </strong>, 9937, 9939, 9940, 9961, 9962, 9968 - 9973, 9975 - 9978, 9981, 9986, 9988 - 9998</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Yet More Symbols: </strong>10000 - 10071, 10075 - 10177</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>dice: </strong>9856 - 9861 </span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Arrows: </strong>8592 - 8703</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Roman Numerals (uppercase): </strong>8544 - 8559</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Roman Numerals (lowercase): </strong>8560 - 8571</span>
+                            
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Copy/Paste: </strong>9111, 9112</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Print: </strong>9113</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Audio/Video Controls: </strong>9193 - 9199, 9208 - 9210</span>
+                            <span class="igen__range"> <span class="seperator">&#8596;</span> <strong>Telephone: </strong>9742, 9743</span>
+                        </div>
+                    </div>
+                    <div id="btns">
+                        <button id="getIcon" type="submit"><span class="btnIco"><img src="imgs/generator.png" alt="Generator Image" /></span>Generate</button>
+                        <button id="reset" type="reset"><span class="btnIco"><img src="imgs/reset.png" /></span>Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div id="icons"></div>
+        <footer id="copy">
+            <p>
+                <span class="copy">dashWoorkZ Sovereign Society &copy;&nbsp;2025</span>
+                <a href="#top"><img src="imgs/dss_logo.png" id="dssLogo" alt="dashWoorkZ Sovereign Society Logo" /><button id="topper">&#8686;<span class="topText">&#84;&nbsp;&#79;&nbsp;&#80;</span></button></a>
+                <span class="copy">dashWoorkZ &copy;&nbsp;2025</span>
+            </p>
+        </footer>
+        
+    </div>
+    </div>
+</body>
+</html>
