@@ -1,5 +1,3 @@
-
- 
  const getIcons = document.getElementById('getIcon').addEventListener('click', getIc);
                 const msg = document.getElementById('msg');
                 function getIc(e) {
@@ -30,4 +28,3 @@
                          }                      
                     }
                 }
-               

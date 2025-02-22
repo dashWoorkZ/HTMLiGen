@@ -1,0 +1,401 @@
+    /* //=== Top Button CSS# ===\\\ */
+    :root {
+        --title: hsl(240, 100%, 50%);
+        --title-shadow: hsl(270, 50%, 40%);
+        --shadow-gold: hsl(51, 100%, 50%);
+        --clr-htmligen-bg: hsl(185, 88%, 90%);
+    }
+
+    body {
+        display: inline grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        width: 100svw;
+    }
+    footer .topDiv {
+        position: relative;
+        display: inline flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        z-index:1;
+        grid-area: top;
+    }
+    
+       footer .topDiv a {
+        z-index: 2;
+        border: 0.2rem solid blue;
+        outline: 0.2rem ridge purple;
+        border-radius: 100%;
+        background-color:#136179;
+        cursor: pointer;
+    }
+    
+    footer .topDiv a #topper {
+        display: inline flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(14, 184, 236);
+        text-shadow: 0 0.05rem 0.1rem purple;
+        font-weight: 700;
+        font-size: clamp(2rem, 2ch, 2.5rem);
+        border-radius: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5rem;
+        height: 5rem;
+        z-index: 3;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 500ms ease;
+    }
+    
+    footer .topDiv a #topper:hover {
+        color: blue;
+        text-shadow: 0 0.05rem 0.05rem gold;
+        background-color: rgb(10, 204, 238);
+        font-weight: 800;
+    }
+    
+    footer .topDiv a #topper #topImg {
+        position: absolute;
+        inset: 0;
+        max-width: 5rem;
+        max-height: 5rem;
+        z-index: 2;
+        opacity: 0.8;
+        z-index: 4;
+    }
+
+    footer .topDiv a #topper .topText,
+    footer .topDiv a #topper .topArrow {
+        letter-spacing: 0.1rem;
+        font-weight: 800;
+        line-height: 1.5;
+        align-items: center;
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    footer .topDiv a #topper .topText{
+        font-size: clamp(1.1rem, 1.1ch, 1.1rem);
+        z-index: 6;
+        display: inline flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    footer .topDiv a #topper .topArrow {
+        font-size: clamp(1.5rem, 1.5ch, 1.5rem);
+        z-index: 5;
+        justify-content: center;
+        align-items: center;
+    }
+/* \\\=== End Topper ===/// */
+
+#htmliGenMain {
+    display: inline grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    max-width: 50rem;
+    align-self: center;
+    border: 0.3rem inset var(--shadow-gold);
+    outline: 0.3rem ridge var(--title-shadow);
+    width: calc(100% - 2rem);
+    gap: 1rem;
+}
+
+#htmlIGen {
+     display: inline grid;
+    background-color: var(--clr-htmligen-bg);
+    gap: 0.5rem;
+    padding-block-end: 1rem;   
+}
+
+    #iGenRangeInput .intro {
+        text-align: center;
+
+        & h1 {
+            color: var(--title);
+            text-shadow: 0 0.02675rem 0.02675rem var(--title-shadow);
+        }
+        & h3 {
+            color: var(--title-shadow);
+            text-shadow: 0 0.02675rem 0.02675rem var(--shadow-gold);
+        }
+    }
+
+    .iconGen {
+        display: inline flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconGen form #iconGenInputs {
+        width: 100%;
+        margin-inline: auto;
+        grid-area: inputs;
+        padding-inline: 1rem;
+    }
+
+    .iconGen form #iconGenInputs #form__group {
+        display: inline flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 50rem;
+    }
+
+    .grid-auto-fit {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(30ch, 1fr)));
+    }
+
+    .iconGen form {
+    display: inline grid;
+    grid-template-columns: minmax(auto-fit, 1fr);
+    grid-template-areas:
+     'inputs'
+    'ranges'
+    'btns';
+    place-content: center;
+    gap: 1.5rem;
+    max-width: 50rem;
+    min-width: 25rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    margin: 0 auto;
+}
+
+
+form #btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 0.5rem;
+    border: 0.2rem groove gold;
+    outline: 0.2rem ridge blue;
+    outline-offset: 0.1rem;
+    grid-area: btns;
+    border-radius: 0.5rem;
+    max-width: 37.5rem;
+    gap: 1.5rem;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+    grid-column: span 2;
+}
+#iconGenInputs #form__group input {
+    gap: 1rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.5rem;
+    border: 0.1rem solid rebeccapurple;
+    max-width: 15rem;
+
+}
+
+input[placeholder] {
+    color: rgb(6, 46, 179);
+    text-shadow: 0.01275rem 0.02275rem 0.03275rem rgb(6, 238, 122);
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.5rem, 1.3ch, 2rem);
+}
+
+#iconGenInputs #form__group label {
+    gap: 1rem;
+    color: blue;
+    text-shadow: 0.01275rem 0.02275rem 0.03275rem rgb(3, 17, 61);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.1rem, 1.2ch, 1.5rem);
+}
+
+    #htmlIGen {
+        gap: 1.5rem;
+    }
+
+    #iconGenInputs #form__group input {
+    gap: 1rem;
+    padding-inline-start: 0.5rem;
+    padding-block: 0.5rem;
+    border: 0.1rem solid rebeccapurple;
+
+}
+
+input[placeholder] {
+    color: rgb(6, 46, 179);
+    text-shadow: 0.01275rem 0.02275rem 0.03275rem rgb(6, 238, 122);
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.5rem, 1.3ch, 2rem);
+}
+
+#iconGenInputs #form__group label {
+    gap: 1rem;
+    color: blue;
+    text-shadow: 0.01275rem 0.02275rem 0.03275rem rgb(3, 17, 61);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.1rem, 1.2ch, 1.5rem);
+}
+
+#reset,
+#getIcon {
+    display: inline flex;
+    width: 8.5rem;
+    height: 2.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding-inline-end: 0.5rem;
+    color: blue;
+    text-shadow: 0.03275rem 0.03275rem 0.03275rem rgb(10, 125, 170);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(0.8rem, 1.2ch, 1.2rem);
+    cursor: pointer;
+    position: relative;
+    border: 0.1rem inset blue;
+    border-radius: 0.5rem;
+    rotate: 0;     
+
+    & span {
+        width:2.5rem;
+        height: 2.5rem;
+        border-radius: 100;
+    }
+
+    &:hover {
+        border: 0.2rem inset green;
+        background-color: #10B9EB;
+    }
+}
+
+.btnIco img {
+    scale: 0.6;
+    position: absolute;
+    left: 0;
+    bottom: 0.25rem;
+    position: relative;
+}
+
+#reset:hover::after,
+#getIcon:hover::after {
+    content: "Courtesy of PngTree";
+    position: absolute;
+    top: 3.3rem;
+    Left: 1rem;  
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: clamp(0.5rem, 0.75ch, 1rem);
+    color: green;
+    text-shadow: 0.03275rem 0.03275rem 0.03275rem orange;
+}
+
+#icons {
+    display: inline flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-inline: auto;
+    justify-content: center;
+    max-width: 100%;
+    margin-block: 1rem;
+}
+
+#icons > div {
+    display: flex;
+    border: 0.2rem solid blue;
+    outline: 0.2rem ridge purple;
+    outline-offset: 0.1rem;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    width: min(5rem, 11rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icons  > div .uni {
+    color: blue;
+    text-shadow: 0 0.1rem 0.1rem gold;
+    font-weight: 700;
+    font-size: clamp(0.8rem, 1ch, 4rem);
+}
+
+#cons > div .icon {
+    display: inline;
+    color: gold;
+    text-shadow: 0 0.1rem 0.2rem purple;
+    font-weight: 700;
+    font-size: clamp(2rem, 3ch, 4rem);           
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 100%;
+}
+
+#copy {
+    display: inline flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    align-items: flex-end;
+    padding-block-end: 1rem;
+    width: calc(100% - 4rem);
+    flex-wrap: wrap;
+}
+.copyDWRX,
+.copyDSS {
+    font-size: clamp(0.5rem, 0.8ch, 1rem);
+    color: rgb(14, 184, 236);
+    text-shadow: 0 0.0125rem 0.1rem purple;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    }
+
+    .range__groups {
+        grid-area: ranges;
+    }
+
+    .range__groups h1 {
+    color: blue;
+    text-shadow: 0 0.02rem 0.02rem rgb(106, 10, 170);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(2rem, 1.8ch, 2.5rem);
+}
+
+.html__igen__ranges strong {
+    color: rgb(162, 0, 255);
+    text-shadow: 0 0.02rem 0.02rem rgb(21, 10, 170);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1rem, 1.1ch, 1.5rem);
+}
+
+.igen__range .seperator {
+    color: gold;
+    text-shadow: 0 0.02rem 0.02rem dodgerblue;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: clamp(1.2rem, 1.3ch, 1.5rem);
+}
+
+
+.igen__range {
+    color: rgb(2, 20, 39);
+    text-shadow: 0 0.02rem 0.02rem rgb(12, 181, 233);
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    font-size: clamp(1rem, 1.1ch, 1.5rem);
+}
